@@ -1,9 +1,9 @@
 {
-    "name": "agentile/php-stanford-nlp",
+    "name": "cloudvox/php-stanford-nlp",
     "type": "library",
     "description": "PHP interface to Stanford NLP Tools",
     "keywords": ["stanford","nlp","ner","pos","parser"],
-    "homepage": "https://github.com/agentile/PHP-Stanford-NLP",
+    "homepage": "https://github.com/cloudvox/PHP-Stanford-NLP",
     "license": "MIT",
     "authors": [
         {
