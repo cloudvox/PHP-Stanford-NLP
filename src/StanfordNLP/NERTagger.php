@@ -57,11 +57,11 @@ class NERTagger extends StanfordTagger {
      */
     public function setClassifier($classifier)
     {
-        if (file_exists($classifier)) {
+        // if (file_exists($classifier)) {
             $this->classifier = $classifier;
-        } else {
-            throw new Exception("Classifier file path does not exist.");
-        }
+        // } else {
+        //     throw new Exception("Classifier file path does not exist.");
+        // }
     }
 
     /**

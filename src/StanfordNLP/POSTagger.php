@@ -58,11 +58,11 @@ class POSTagger extends StanfordTagger {
      */
     public function setModel($model)
     {
-        if (file_exists($model)) {
+        // if (file_exists($model)) {
             $this->model = $model;
-        } else {
-            throw new Exception("Model file path does not exist.");
-        }
+        // } else {
+        //     throw new Exception("Model file path does not exist.");
+        // }
     }
 
     /**
