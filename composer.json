@@ -1,5 +1,5 @@
 {
-    "name": "cloudvox/php-stanford-nlp",
+    "name": "dialogtech/php-stanford-nlp",
     "type": "library",
     "description": "PHP interface to Stanford NLP Tools",
     "keywords": ["stanford","nlp","ner","pos","parser"],
