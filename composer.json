@@ -13,23 +13,14 @@
             "role": "Developer"
         }
     ],
+    "repositories": [{ "type": "composer", "url": "http:\/\/192.168.99.100" }],
     "require": {
-        "php": ">=5.3.0"
+        "php": ">=5.3.0",
+        "dialogtech/enhanced-nlp-engine": "0.2"
     },
     "autoload": {
         "psr-0": {
             "StanfordNLP": "src"
         }
-    },
-    "bin": [
-        "bin/get_nlp.sh"
-    ],
-    "scripts": {
-        "post-install-cmd": [
-            "bin/get_nlp.sh"
-        ],
-        "post-update-cmd": [
-            "bin/get_nlp.sh"
-        ]
     }
 }
