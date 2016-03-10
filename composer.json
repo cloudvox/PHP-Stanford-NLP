@@ -13,8 +13,10 @@
             "role": "Developer"
         }
     ],
+    "repositories": [{ "type": "composer", "url": "http:\/\/192.168.99.100" }],
     "require": {
-        "php": ">=5.3.0"
+        "php": ">=5.3.0",
+        "dialogtech/enhanced-nlp": "1.0.1"
     },
     "autoload": {
         "psr-0": {
