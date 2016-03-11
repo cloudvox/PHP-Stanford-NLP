@@ -12,7 +12,8 @@
  */
 namespace StanfordNLP;
 
-class StanfordTagger extends Base {
+class StanfordTagger extends Base
+{
 
     /**
      * Tag separator
@@ -141,7 +142,7 @@ class StanfordTagger extends Base {
                     . $separator
                     . " -encoding utf8"
                 );
-            break;
+                break;
             case 'ner':
                 $cmd = escapeshellcmd(
                     $this->getJavaPath()
@@ -153,7 +154,7 @@ class StanfordTagger extends Base {
                     . $tmpfname
                     . " -encoding utf8"
                 );
-            break;
+                break;
         }
 
         $process = proc_open($cmd, $descriptorspec, $pipes, dirname($this->getJar()));
@@ -173,8 +174,8 @@ class StanfordTagger extends Base {
             fclose($pipes[2]);
 
             // close pipe before calling proc_close in order to avoid a deadlock
-            $return_value = proc_close($process);
-            if ($return_value == -1) {
+            $returnValue = proc_close($process);
+            if ($returnValue == -1) {
                 throw new Exception("Java process returned with an error (proc_close).");
             }
         }

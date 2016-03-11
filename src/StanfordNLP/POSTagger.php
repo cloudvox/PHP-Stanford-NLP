@@ -12,7 +12,8 @@
  */
 namespace StanfordNLP;
 
-class POSTagger extends StanfordTagger {
+class POSTagger extends StanfordTagger
+{
 
     /**
      * Tagger model file
@@ -28,12 +29,12 @@ class POSTagger extends StanfordTagger {
      *
      * @return null
      */
-    public function __construct($model, $jar, $java_options = array('-mx300m'))
+    public function __construct($model, $jar = null, $javaOptions = array('-mx300m'))
     {
         parent::__construct();
         $this->setModel($model);
         $this->setJar($jar);
-        $this->setJavaOptions($java_options);
+        $this->setJavaOptions($javaOptions);
     }
 
     /**

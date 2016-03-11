@@ -10,7 +10,8 @@
  */
 namespace StanfordNLP;
 
-class NERTagger extends StanfordTagger {
+class NERTagger extends StanfordTagger
+{
 
     /**
      * NER classifier file
@@ -26,12 +27,12 @@ class NERTagger extends StanfordTagger {
      *
      * @return null
      */
-    public function __construct($classifier, $jar, $java_options = array('-mx300m'))
+    public function __construct($classifier, $jar = null, $javaOptions = array('-mx300m'))
     {
         parent::__construct();
         $this->setClassifier($classifier);
         $this->setJar($jar);
-        $this->setJavaOptions($java_options);
+        $this->setJavaOptions($javaOptions);
     }
 
     /**

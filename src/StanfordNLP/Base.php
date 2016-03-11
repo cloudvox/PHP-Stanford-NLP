@@ -104,9 +104,22 @@ class Base {
      */
     public function setJar($jar)
     {
+        $this->jar = null;
         if (file_exists($jar)) {
             $this->jar = $jar;
-        } else {
+        }
+
+        $jar = __DIR__ . "/../../../../bin/eNLP.jar";
+        if (file_exists($jar)) {
+            $this->jar = $jar;
+        }
+
+        $jar = __DIR__ . "/../../vendor/bin/eNLP.jar";
+        if (file_exists($jar)) {
+            $this->jar = $jar;
+        }
+        
+        if ($this->jar === null) {
             throw new Exception("Jar file path does not exist.");
         }
     }
