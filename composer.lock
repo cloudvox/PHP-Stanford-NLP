@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6d862f38cd758b8ee687e500ead879cb",
+    "hash": "ea009f5e52f76f1103115ea0ee57f9d5",
     "packages": [
         {
             "name": "dialogtech/enhanced-nlp-engine",
